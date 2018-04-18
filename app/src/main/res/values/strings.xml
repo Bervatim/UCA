@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alarmas</string>
+    <string name="tvTitle">Introduzca los minuts que pasarán entre cada alarma:</string>
+    <string name="tv1Alarma">1ª Alarma:</string>
+    <string name="tv2Alarma">2ª Alarma:</string>
+    <string name="tv3Alarma">3ª Alarma:</string>
+    <string name="tv4Alarma">4ª Alarma:</string>
+    <string name="tv5Alarma">5ª Alarma:</string>
+    <string name="btActivar">Activar</string>
+</resources>

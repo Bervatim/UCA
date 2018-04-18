@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tv1Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/tv1Alarma"/>
+
+    <TextView
+        android:id="@+id/tv2Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv1Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/tv2Alarma"/>
+
+    <TextView
+        android:id="@+id/tv3Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv2Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/tv3Alarma"/>
+
+    <TextView
+        android:id="@+id/tv4Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv3Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/tv4Alarma"/>
+
+    <TextView
+        android:id="@+id/tv5Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv4Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/tv5Alarma"/>
+
+    <EditText
+        android:id="@+id/et1Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv1Alarma"
+        android:layout_alignBottom="@id/tv1Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="2"
+        android:layout_toRightOf="@id/tv1Alarma"
+        android:ems="6"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/et2Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv2Alarma"
+        android:layout_alignBottom="@id/tv2Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="2"
+        android:layout_toRightOf="@id/tv2Alarma"
+        android:ems="6"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et3Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv3Alarma"
+        android:layout_alignBottom="@id/tv3Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="2"
+        android:layout_toRightOf="@id/tv3Alarma"
+        android:ems="6"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et4Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv4Alarma"
+        android:layout_alignBottom="@id/tv4Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="2"
+        android:layout_toRightOf="@id/tv4Alarma"
+        android:ems="6"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et5Alarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv5Alarma"
+        android:layout_alignBottom="@id/tv5Alarma"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="2"
+        android:layout_toRightOf="@id/tv5Alarma"
+        android:ems="6"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btActivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv5Alarma"
+        android:layout_below="@id/et5Alarma"
+        android:layout_marginTop="14dp"
+        android:text="@string/btActivar"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/tvTiempoRestante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv2Alarma"
+        android:layout_toRightOf="@id/et2Alarma"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Tiempo Restante"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/tvAlarmRestantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTiempoRestante"
+        android:layout_below="@+id/tvTiempoRestante"
+        android:layout_marginTop="15dp"
+        android:text="Alarmas Restantes"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>
